@@ -2,6 +2,7 @@
 
 </script>
 <template>
+    <!-- main -->
     <div class="flex justify-between">
         <div>Taxgether</div>
         <div class="flex">
