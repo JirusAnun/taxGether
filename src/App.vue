@@ -4,6 +4,6 @@ import navBar from './components/navbar.vue'
 </script>
 
 <template>
-  <navBar/>
+  <!-- <navBar/> -->
   <banner/>
 </template>
