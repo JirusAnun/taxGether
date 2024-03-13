@@ -31,6 +31,7 @@
       <div class="w-full flex justify-end">
         <div class="bg-red-500 w-[60vw] h-[30vh] mt-[5%] mr-[5%] rounded-2xl"></div>
       </div>
+      <h2 class="static">test</h2>
     </div>
   </div>
 </template>
