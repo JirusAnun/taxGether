@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .glass{
+        background: linear-gradient(180deg, rgb(160, 188, 239,0.17) 0%, rgba(85, 115, 172, 0.4) 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(255, 255, 255, 0.51);
+    }
+    .passed{
+        @apply font-bold bg-gradient-to-r from-red-600 to-red-400 text-white
+    }
+    .noPassed{
+        @apply bg-indigo-200 font-bold text-indigo-100
+    }
+    .input{
+        @apply ps-3 py-3 rounded-md text-indigo-600
+    }
+    .subscript{
+        @apply text-xs text-indigo-100
+    }
+    .inputElement{
+        @apply sm:px-2 md:px-16 xl:px-24 2xl:px-40 space-y-4
+    }
+}
+
+*{
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.english{
+    font-family: "Poppins", sans-serif;
+}

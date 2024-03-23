@@ -12,9 +12,6 @@
     toggle() {
       this.showNav = !this.showNav
       console.log(this.showNav)
-    },
-    printHello(){
-        console.log("Hello")
     }
   },
 
@@ -27,7 +24,8 @@
 <template>
     <!-- hi dutchie do this work pls -->
     <!-- kuy dutch 123 -->
-    <div class="flex py-5 px-4">
+    <div class="fixed top-0 z-50 w-screen">
+      <div class="flex py-5 px-4">
         <div class="flex py-3 flex-1">Taxgether</div>
         <div class="hidden md:flex py-3 flex-[2_2_0%] justify-center">
             <div class="pr-5">Products</div>
@@ -53,4 +51,6 @@
         <div class="flex justify-center py-1">Company</div>
         <div class="flex justify-center pt-1 pb-2">Pricing</div>
     </div>
+    </div>
+    
 </template>
