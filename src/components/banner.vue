@@ -11,6 +11,9 @@
   import Header from './pages/pagesComponents/header.vue';
   import Next from './pages/pagesComponents/next.vue';
   import Back from './pages/pagesComponents/back.vue';
+  import Calculation from './pages/mainPages/calculation.vue';
+  // /pages/mainPages/calculation.vue
+  // /banner.vue
 
   const canvas = ref(null);
 
@@ -66,15 +69,18 @@
 
     <div class="snap-start h-screen w-screen gradient-bg flex flex-col items-center justify-center">
       <h1 class="mb-[2.5vh] mt-[-20%] sm:mt-[3%] text-5xl font-Mitr font-semibold text-white">Who you are?</h1>
-      <div class="w-full flex justify-start items-center">
-        <div class="sm:w-[60vw] h-[30vh] mt-[2.5%] ml-[5%] rounded-2xl p-5 w-[90vw] glass">
-          <h2 class="mb-4 text-3xl text-[#ffffff]">Tax spender</h2>
-          <p class="text-white font-Noto font-medium">คุณเป็นคนที่เสียภาษีให้กับรัฐบาลสุดโง่ที่ไม่รู้ว่าเค้าเอาภาษีของคุณไปทำอะไร</p>
+      
+      
+        <div class="w-full flex justify-start items-center">
+          <div class="sm:w-[60vw] h-[30vh] mt-[2.5%] ml-[5%] rounded-2xl p-5 w-[90vw] glass">
+            <h2 class="mb-4 text-3xl text-[#ffffff]">Tax spender</h2>
+            <p class="text-white font-Noto font-medium">คุณเป็นคนที่เสียภาษีให้กับรัฐบาลสุดโง่ที่ไม่รู้ว่าเค้าเอาภาษีของคุณไปทำอะไร</p>
+          </div>
+          <div class="flex-grow flex items-center justify-center">
+            <img src="../assets/taxPeople.png" class="w-0 sm:w-[30vw] sm:h-[30vh] sm:object-contain invisible sm:visible">
+          </div>
         </div>
-        <div class="flex-grow flex items-center justify-center">
-          <img src="../assets/taxPeople.png" class="w-0 sm:w-[30vw] sm:h-[30vh] sm:object-contain invisible sm:visible">
-        </div>
-      </div>
+      
 
       <div class="w-full flex justify-end items-center">
         <div class="flex-grow flex items-center justify-center">
@@ -86,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="snap-start h-screen w-screen bg-purple flex flex-col items-center justify-center">
+    <!-- <div class="snap-start h-screen w-screen bg-purple flex flex-col items-center justify-center">
       <div class="w-screen h-screen flex justify-center items-center">
         <div class="glass w-5/6  pb-16 relative"> 
           <Header/>
@@ -104,6 +110,9 @@
             <div><h1>Banner</h1>{{ JSON.stringify(formData) }}</div>
         </div>
       </div>
+    </div> -->
+    <div class="snap-start h-screen w-screen bg-purple flex flex-col items-center justify-center">
+      <Calculation/>
     </div>
   </div>
 </template>
